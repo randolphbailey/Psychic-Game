@@ -4,16 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/hover-min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Psychic Game</title>
 </head>
 <body>
-    <h1>The Psychic Game</h1>
-    <p>Guess what letter I'm thinking of</p>
-    <p>Wins: <span id="winCounter">0</span></p>
-    <p>Losses: <span id="lossCounter">0</span></p>
-    <p>Guesses Left: <span id="guessesLeft">9</span></p>
-    <p>Your Guesses so far: <span id="guesses"></span></p>
-
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>The Psychic Game</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <p>Guess what letter I'm thinking of</p>
+                <p>Wins: <span id="winCounter">0</span></p>
+                <p>Losses: <span id="lossCounter">0</span></p>
+                <p>Guesses Left: <span id="guessesLeft">9</span></p>
+                <p>Your Guesses so far: <span id="guesses"></span></p>
+            </div>
+            <div class="col-lg-6">
+                <p>Computer's Current Letter</p>
+                <h2><p class="spoiler" id="compGuessHidden">Test</p></h2>
+                <p>Rollover to reveal!</p>
+                <button type="button" class="btn btn-warning" onclick="newGame()">New Game</button>
+                <button type="button" class="btn btn-danger" onclick="reset()">Reset Scores</button>
+            </div>
+            </div>
+        </div>
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+        <a class="navbar-brand" href="#">Copyright 2018</a>
+    </nav>
    <script src="assets/javascript/game.js"></script>
 </body>
 </html>

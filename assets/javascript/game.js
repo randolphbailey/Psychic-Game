@@ -9,6 +9,7 @@ var list = "";  //used to list out previous guesses as string
 //Computer's Random Guess
 var compGuess = getRndInteger(0, 25); //initialize computer's first guess on page load.
 console.log(compGuess);
+document.getElementById("compGuessHidden").innerText = alphabet[compGuess].toUpperCase();
 
 //Functions
 document.onkeydown = function gamePlay () {
@@ -55,5 +56,13 @@ function newGame () {  //reset values and HTML for new game
     lettersSoFar = [];
     document.getElementById("guesses").innerHTML = list;
     document.getElementById("guessesLeft").innerHTML = guessesRemaining;
+    document.getElementById("compGuessHidden").innerText = alphabet[compGuess].toUpperCase();
     console.log(compGuess);
+}
+
+function reset () {
+    var wins = 0;
+    var losses = 0;
+    document.getElementById("winCounter").innerHTML = wins;
+    document.getElementById("lossCounter").innerHTML = losses;
 }

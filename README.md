@@ -1,3 +1,5 @@
+![Psychic](/assets/psychicgame.gif)
+
 # Psychic Game
 
 An extremely simple game where the user attempts to guess the randomly chosen letter the computer is thinking of.

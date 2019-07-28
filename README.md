@@ -9,3 +9,4 @@ Keyboard events are compared to the randomly chosen letter every time a new game
 ## Technologies Used
 * Bootstrap
 * CSS-rollover
+* Mobile Responsive

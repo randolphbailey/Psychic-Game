@@ -12,3 +12,6 @@ Keyboard events are compared to the randomly chosen letter every time a new game
 * Bootstrap
 * CSS-rollover
 * Mobile Responsive
+
+## Link to deployed site
+https://psychic.randolphbailey.com
